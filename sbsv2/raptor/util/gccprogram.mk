@@ -31,7 +31,7 @@ all:: $(BINDIR)/$(TARGET)$(PROGRAMEXT)
 $(foreach SOURCEFILE,$(SOURCES),$(cpp2obj))
 
 $(BINDIR)/$(TARGET)$(PROGRAMEXT): $$(OBJECTS)
-	g++ $(LDFLAGS) $$^ -o $$@
+	g++ $$^ $(LDFLAGS) -o $$@
 	
 $$(shell mkdir -p $(OUTPUTPATH)/$(TARGET) $(BINDIR))
 

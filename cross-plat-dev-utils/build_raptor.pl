@@ -10,6 +10,7 @@
 
 # Script to build Raptor (sbsv2)
 
+use lib ".";
 use strict;
 use File::Spec;
 use places;
